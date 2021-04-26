@@ -1,3 +1,6 @@
-# Narcos Code Başvuru bot altyapı
+Bu altpapı, 
 
-altyapı narcos codeye ayittir altyapı 26.04.2021 tarihinde yapılmıştır altyapı tr de ve dünyada ilk dir .
+Krom.js#0516
+MustafaMert#9440
+ve
+Croxy ^^#6978  TARAFINDAN YAPILMIŞTIR!
