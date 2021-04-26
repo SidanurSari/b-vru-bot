@@ -22,7 +22,7 @@ exports.run = function(client, message, args) {
   if (!adınız)return message.channel.send(`:no_entry: Adınızı yazmalısınız`).then(m => m.delete({timeout: 10000}))
   if(isNaN(yaşınız)) return message.channel.send(`:no_entry: Yaşlar rakamdan oluşmalıdır.`).then(m => m.delete({timeout: 10000}))
   if (!yaşınız) return message.channel.send(`:no_entry: Yaşınızı yazmalısınız`).then(m => m.delete({timeout: 10000}))
-  if(katagori !== "abone-yetkilisi" || "kod-paylaşımcı" || "destek-ekibi" || "abone" || "destek" || "kod") return message.channel.send(":no_entry: Böyle bir kategori yok! \n katagorilerimiz: **abone-yetkilisi** , **kod-paylaşımcı** , **destek-ekibi**").then(m => m.delete({timeout: 10000}))
+  
   if (!katagori) return message.channel.send(`:no_entry: Hangi bölümü seçiceksiniz (Kod-Paylaşımcı/Abone-Yetkilisi/Destek-Ekibi)burayı kendinize göre ayarlayınız`).then(m => m.delete({timeout: 10000}))
  
   
@@ -31,10 +31,10 @@ exports.run = function(client, message, args) {
   .setDescription(`${message.author} adlı kullanıcı ${katagori} bölümüne yetkili başvuru yaptı `)
   const embed = new Discord.MessageEmbed()
   .setColor("BLUE")
-  .setTitle("yetkili başvuru")
-  .addField("Başvuran kişinin adı", adınız)
-  .addField("Başvuran kişinin yaşı", yaşınız)
-  .addField("Başvurdu bölüm", katagori)
+  .setTitle("Başvuru Geldi!")
+  .addField("<:klln:823577811067469844> **•** Başvuran kişinin adı", `\`\`\`${adınız}\`\`\``)
+  .addField("<:klln:823577811067469844> **•** Başvuran kişinin yaşı", `\`\`\`${yaşınız}\`\`\``)
+  .addField("<:kurallar:823577810488393738> **•** Başvurduğu kategori", `\`\`\`${katagori}\`\`\``)
 
   client.channels.cache.get(basvuru).send(embed)
   client.channels.cache.get(log).send(basvuruuu)

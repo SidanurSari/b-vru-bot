@@ -16,13 +16,13 @@ exports.run = function(client, message, args) {
   if(!kanal) return message.channel.send("Bu komudu kullanmak için yetkili başvuru kanallarının sunucuda ayarlı olması gerekiyor.")
   const onay = new Discord.MessageEmbed()
   .setColor("GREEN")
-  .setDescription(`<@${sahip}> adlı kişinin <@${adı}> adlı kişinini yetkili başvurusunu onayladın.\nOnaylayan yetkili : ${message.author}`)
+  .setDescription(` <@${adı}> adlı kişinini yetkili başvurusunu onayladın.\nOnaylayan yetkili : ${message.author}`)
     
-    if (!adı) return message.channel.send(`:no_entry: başvuruun idsini yazmalısın.`).then(msg => msg.delete(10000))
+    if (!adı) return message.channel.send(`:no_entry: Başvuran kişinin ismini yazmalısınız`).then(m => m.delete({timeout: 10000}))
   message.delete()
-  if (!sahip) return message.channel.send(`:no_entry: başvuruun sahipinin ID'sini yazmalısın.`).then(msg => msg.delete(10000))
+  
         client.channels.cache.get(log).send(onay)      
-  message.channel.send(`başvuruu onayladınız.`).then(msg => msg.delete(1000))
+  message.channel.send(`başvuru onayladınız.`).then(m => m.delete({timeout: 10000}))
  
 };
 
