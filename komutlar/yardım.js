@@ -5,14 +5,14 @@ exports.run = async (client, message, args) => {
 
 const embed = new Discord.MessageEmbed()
 .addField("Yardım Menüsü", `
- ╔════════════════◥◣❖◢◤═════════════════╗
+ ╔══════════════════════════════════════╗
  ║
  ║<:uye:823577810383667200> **•** \`!başvuru-ayar\` ➡ **Başvuru ayarlarını yaparsınız.**
  ║<:uye:823577810383667200> **•** \`!başvuru-onay\` ➡ **Başvuru yapan birinin başvurusunu onaylarsınız.**
  ║<:uye:823577810383667200> **•** \`!başvuru-reddet\` ➡ **Başvuru yapan birinin başvurusunu reddedersiniz.**
  ║<:uye:823577810383667200> **•** \`!başvuru\` ➡ **Başvuru yaparsınız.**
  ║
- ╚════════════════◥◣❖◢◤═════════════════╝
+ ╚══════════════════════════════════════╝
  \`\`\`Altyapı Narcos Code'ye Aittir.\`\`\`
  `);
 

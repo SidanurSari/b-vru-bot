@@ -8,14 +8,14 @@ exports.run = function(client, message, args) {
 	if(!args[0]) return message.channel.send(new Discord.MessageEmbed()
                                           .setTitle("Doğru Kullanım:")
                                           .addField("Yardım Menüsü", `
-                                          ╔════════════════◥◣❖◢◤═════════════════╗
+                                          ╔══════════════════════════════════════╗
                                           ║
                                           ║ <:mod2:823577817621987358> **•** \`!başvuru-ayar başvuruyap-kanal\` ➡ **Başvuru kanalını ayarlarsınız.**
                                           ║ <:mod2:823577817621987358> **•** \`!başvuru-ayar başvurulog-kanal #kanal\` ➡ **Başvuru log kanalını ayarlarsınız.**
                                           ║ <:mod2:823577817621987358> **•** \`!başvuru-ayar başvurugiden-kanal #kanal\` ➡ **Başvuruların gideceği kanalı ayarlarsınız.**
                                           ║ <:mod2:823577817621987358> **•** \`!başvuru-ayar yetkili @rol\` ➡ **Yetkili rolünü ayarlarsınız.**
                                           ║
-                                          ╚════════════════◥◣❖◢◤═════════════════╝
+                                          ╚══════════════════════════════════════╝
                                           \`\`\`Altyapı Narcos Code'ye Aittir.\`\`\`
                                           `)
                                           .setColor(message.guild.me.displayColor)

@@ -32,7 +32,7 @@ exports.run = function(client, message, args) {
   const embed = new Discord.MessageEmbed()
   .setColor("BLUE")
   .setTitle("Başvuru Geldi!")
-  .addField("<:klln:823577811067469844> **•** Başvuran kişinin adı", `\`\`\`${adınız}\`\`\``)
+  .addField("<:klln:823577811067469844> **•** Başvuran kişinin adı", `\`\`\`${adınız}\`\`\`(<@${message.author.id}>)` )
   .addField("<:klln:823577811067469844> **•** Başvuran kişinin yaşı", `\`\`\`${yaşınız}\`\`\``)
   .addField("<:kurallar:823577810488393738> **•** Başvurduğu kategori", `\`\`\`${katagori}\`\`\``)
 
