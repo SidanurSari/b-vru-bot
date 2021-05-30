@@ -16,8 +16,9 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    "Narcos Botlist efsane altyapı",
-    "V12 altyapı"
+    "Narcos Code efsane altyapı",
+    "V12 altyapı",
+    "Başvuru botu altyapısı"
 
   ];
 
